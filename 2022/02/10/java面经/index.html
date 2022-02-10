@@ -22,30 +22,57 @@
     var CONFIG = {"hostname":"sixwudou.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="选择有时候比努力更重要">
-<meta property="og:type" content="website">
-<meta property="og:title" content="毋  豆 Blog">
-<meta property="og:url" content="https://sixwudou.github.io/index.html">
+  <meta name="description" content="重载和重写的区别（了解）重载： 发生在同一个类中，方法名必须相同，参数类型不同，个数不同，顺序不同，方法返回值和访问修饰符可以不同，发生在编译时。  重写： 发生在父子类中，方法名，参数列表必须相同，返回值范围小于等于父类，抛出的异常范围小于等于父类，访问修饰符范围大于等于父类；如果父类方法访问修饰符为 private 则子类就不能重写该方法。  String和StringBuffer,Strin">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java基础">
+<meta property="og:url" content="https://sixwudou.github.io/2022/02/10/java%E9%9D%A2%E7%BB%8F/index.html">
 <meta property="og:site_name" content="毋  豆 Blog">
-<meta property="og:description" content="选择有时候比努力更重要">
+<meta property="og:description" content="重载和重写的区别（了解）重载： 发生在同一个类中，方法名必须相同，参数类型不同，个数不同，顺序不同，方法返回值和访问修饰符可以不同，发生在编译时。  重写： 发生在父子类中，方法名，参数列表必须相同，返回值范围小于等于父类，抛出的异常范围小于等于父类，访问修饰符范围大于等于父类；如果父类方法访问修饰符为 private 则子类就不能重写该方法。  String和StringBuffer,Strin">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88B7.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88B8.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88B9.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88BA.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88BB.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88BC.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88BD.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88BE.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88CF.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88D0.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88D1.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88D2.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88D3.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88D4.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88D5.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88D6.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88D7.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88D8.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88E8.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88E9.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88EA.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88EB.tmp.jpg">
+<meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88EC.tmp.jpg">
+<meta property="article:published_time" content="2022-02-10T06:26:32.000Z">
+<meta property="article:modified_time" content="2022-02-10T06:36:30.159Z">
 <meta property="article:author" content="毋  豆">
+<meta property="article:tag" content="面试">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88B7.tmp.jpg">
 
-<link rel="canonical" href="https://sixwudou.github.io/">
+<link rel="canonical" href="https://sixwudou.github.io/2022/02/10/java%E9%9D%A2%E7%BB%8F/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>毋  豆 Blog</title>
+  <title>java基础 | 毋  豆 Blog</title>
   
 
 
@@ -154,9 +181,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -172,10 +200,9 @@
       <meta itemprop="name" content="毋  豆 Blog">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/02/10/java%E9%9D%A2%E7%BB%8F/" class="post-title-link" itemprop="url">java基础</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          java基础
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -199,7 +226,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="重载和重写的区别（了解）"><a href="#重载和重写的区别（了解）" class="headerlink" title="重载和重写的区别（了解）"></a>重载和重写的区别（了解）</h3><p><strong>重载</strong>： 发生在同一个类中，方法名必须相同，参数类型不同，个数不同，顺序不同，方法返回值和访问修饰符可以不同，发生在编译时。 </p>
+        <h3 id="重载和重写的区别（了解）"><a href="#重载和重写的区别（了解）" class="headerlink" title="重载和重写的区别（了解）"></a>重载和重写的区别（了解）</h3><p><strong>重载</strong>： 发生在同一个类中，方法名必须相同，参数类型不同，个数不同，顺序不同，方法返回值和访问修饰符可以不同，发生在编译时。 </p>
 <p><strong>重写：</strong> 发生在父子类中，方法名，参数列表必须相同，返回值范围小于等于父类，抛出的异常范围小于等于父类，访问修饰符范围大于等于父类；如果父类方法访问修饰符为 private 则子类就不能重写该方法。 </p>
 <h3 id="String和StringBuffer-StringBuilder-的区别是什么？String-为什么是不可变的？（必会）"><a href="#String和StringBuffer-StringBuilder-的区别是什么？String-为什么是不可变的？（必会）" class="headerlink" title="String和StringBuffer,StringBuilder 的区别是什么？String 为什么是不可变的？（必会）"></a>String和StringBuffer,StringBuilder 的区别是什么？String 为什么是不可变的？（必会）</h3><p><strong>可变性</strong> </p>
 <p>简单的来说：String 类中使用 final 关键字字符数组保存字符串， private final char value[] ，所以 String对象是不可变的。而StringBuilder 与 StringBuffer 都继承自 AbstractStringBuilder 类，在AbstractStringBuilder中也是使用字符数组保存字符串 char[]value 但是没有用 final 关键字修饰，所以这两种对象都是可变的。 </p>
@@ -647,640 +674,33 @@
 <p>-XX:MaxTenuringThreshold=15表示当对象的存活的年龄（minor gc一次加1）大于多少时，进入老年代。</p>
 <p>-XX:-DisableExplicirGC表示是否（+表示是，-表示否）打开GC日志。</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/%E9%9D%A2%E8%AF%95/" rel="tag"># 面试</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sixwudou.github.io/2022/01/23/2034/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.gif">
-      <meta itemprop="name" content="毋  豆">
-      <meta itemprop="description" content="选择有时候比努力更重要">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="毋  豆 Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/01/23/2034/" class="post-title-link" itemprop="url">2034</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-01-23 19:31:19" itemprop="dateCreated datePublished" datetime="2022-01-23T19:31:19+08:00">2022-01-23</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-01-24 15:43:59" itemprop="dateModified" datetime="2022-01-24T15:43:59+08:00">2022-01-24</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="2034-股票价格波动"><a href="#2034-股票价格波动" class="headerlink" title="2034. 股票价格波动"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/stock-price-fluctuation/">2034. 股票价格波动</a></h2><h3 id="做题发现对TreeMap的知识缺乏，该页面是Tree-Map的基本方法Java-TreeMap-Java教程-菜鸟教程-cainiaojc-com"><a href="#做题发现对TreeMap的知识缺乏，该页面是Tree-Map的基本方法Java-TreeMap-Java教程-菜鸟教程-cainiaojc-com" class="headerlink" title="做题发现对TreeMap的知识缺乏，该页面是Tree Map的基本方法Java TreeMap - Java教程 - 菜鸟教程 (cainiaojc.com)"></a>做题发现对TreeMap的知识缺乏，该页面是Tree Map的基本方法<a target="_blank" rel="noopener" href="https://www.cainiaojc.com/java/java-treemap.html">Java TreeMap - Java教程 - 菜鸟教程 (cainiaojc.com)</a></h3><p>给你一支股票价格的数据流。数据流中每一条记录包含一个 <strong>时间戳</strong> 和该时间点股票对应的 <strong>价格</strong> 。</p>
-<p>​        不巧的是，由于股票市场内在的波动性，股票价格记录可能不是按时间顺序到来的。某些情况下，有的记录可能是错的。如果两个有相同时间戳的记录出现在数据流中，前一条记录视为错误记录，后出现的记录 <strong>更正</strong> 前一条错误的记录。</p>
-<p>请你设计一个算法，实现：</p>
-<ul>
-<li><strong>更新</strong> 股票在某一时间戳的股票价格，如果有之前同一时间戳的价格，这一操作将 <strong>更正</strong> 之前的错误价格。</li>
-<li>找到当前记录里 <strong>最新股票价格</strong> 。<strong>最新股票价格</strong> 定义为时间戳最晚的股票价格。</li>
-<li>找到当前记录里股票的 <strong>最高价格</strong> 。</li>
-<li>找到当前记录里股票的 <strong>最低价格</strong> 。</li>
-</ul>
-<p>请你实现 <code>StockPrice</code> 类：</p>
-<ul>
-<li><code>StockPrice()</code> 初始化对象，当前无股票价格记录。</li>
-<li><code>void update(int timestamp, int price)</code> 在时间点 <code>timestamp</code> 更新股票价格为 <code>price</code> 。</li>
-<li><code>int current()</code> 返回股票 <strong>最新价格</strong> 。</li>
-<li><code>int maximum()</code> 返回股票 <strong>最高价格</strong> 。</li>
-<li><code>int minimum()</code> 返回股票 <strong>最低价格</strong> 。</li>
-</ul>
-<p><strong>示例 1：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">输入：</span><br><span class="line">[&quot;StockPrice&quot;, &quot;update&quot;, &quot;update&quot;, &quot;current&quot;, &quot;maximum&quot;, &quot;update&quot;, &quot;maximum&quot;, &quot;update&quot;, &quot;minimum&quot;]</span><br><span class="line">[[], [1, 10], [2, 5], [], [], [1, 3], [], [4, 2], []]</span><br><span class="line">输出：</span><br><span class="line">[null, null, null, 5, 10, null, 5, null, 2]</span><br><span class="line"></span><br><span class="line">解释：</span><br><span class="line">StockPrice stockPrice = new StockPrice();</span><br><span class="line">stockPrice.update(1, 10); // 时间戳为 [1] ，对应的股票价格为 [10] 。</span><br><span class="line">stockPrice.update(2, 5);  // 时间戳为 [1,2] ，对应的股票价格为 [10,5] 。</span><br><span class="line">stockPrice.current();     // 返回 5 ，最新时间戳为 2 ，对应价格为 5 。</span><br><span class="line">stockPrice.maximum();     // 返回 10 ，最高价格的时间戳为 1 ，价格为 10 。</span><br><span class="line">stockPrice.update(1, 3);  // 之前时间戳为 1 的价格错误，价格更新为 3 。</span><br><span class="line">                          // 时间戳为 [1,2] ，对应股票价格为 [3,5] 。</span><br><span class="line">stockPrice.maximum();     // 返回 5 ，更正后最高价格为 5 。</span><br><span class="line">stockPrice.update(4, 2);  // 时间戳为 [1,2,4] ，对应价格为 [3,5,2] 。</span><br><span class="line">stockPrice.minimum();     // 返回 2 ，最低价格时间戳为 4 ，价格为 2 。</span><br></pre></td></tr></table></figure>
-
-<p><strong>提示：</strong></p>
-<ul>
-<li><code>1 &lt;= timestamp, price &lt;= 109</code></li>
-<li><code>update</code>，<code>current</code>，<code>maximum</code> 和 <code>minimum</code> <strong>总</strong> 调用次数不超过 <code>105</code> 。</li>
-<li><code>current</code>，<code>maximum</code> 和 <code>minimum</code> 被调用时，<code>update</code> 操作 <strong>至少</strong> 已经被调用过 <strong>一次</strong> 。</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line">模拟 + 数据结构</span><br><span class="line">容易想到我们需要使用「哈希表」来记录 &#123;时间:价格&#125; 的映射关系。</span><br><span class="line"></span><br><span class="line">关于 current 操作，我们可以维护一个最大的时间戳 cur，在调用 current 的时候直接 O(<span class="number">1</span>)O(<span class="number">1</span>) 查得结果。</span><br><span class="line"></span><br><span class="line">然后考虑解决 update 操作中对相同时间点的更新问题，我们可以使用 TreeMap（红黑树）来解决该问题。以 &#123;价格:该价格对应的时间点数量&#125; 的 KV 形式进行存储，key 按照「升序」进行排序。</span><br><span class="line"></span><br><span class="line">然后对传入的 timestamp 是否已经被记录（是否已经存在哈希表中）进行分情况讨论：</span><br><span class="line"></span><br><span class="line">传入的 timestamp 未被记录，直接更新哈希表和 TreeMap；</span><br><span class="line">传入的 timestamp 已被记录，此时需要先从哈希表取出旧价格 old，然后用旧价格对 TreeMap 进行修改（如果该价格只有一个时间点，将该价格直接从 TreeMap 中移除；若有多个时间点，则对该价格对应的时间点数量进行减一操作），然后再使用传入的新价格 price 更新哈希表和 TreeMap。</span><br><span class="line">minimum 和 maximum 操作则只需要取得 TreeMap 的首尾 Key 即可。</span><br><span class="line"></span><br><span class="line">作者：AC_OIer</span><br><span class="line">链接：https:<span class="comment">//leetcode-cn.com/problems/stock-price-fluctuation/solution/gong-shui-san-xie-shu-ju-jie-gou-mo-ni-t-u6f4/</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">StockPrice</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> cur ;<span class="comment">//记录最新时间戳</span></span><br><span class="line">    Map&lt;Integer,Integer&gt; map;</span><br><span class="line">    TreeMap&lt;Integer,Integer&gt; tm;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">StockPrice</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        tm = <span class="keyword">new</span> TreeMap&lt;&gt;();</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">update</span><span class="params">(<span class="keyword">int</span> timestamp, <span class="keyword">int</span> price)</span> </span>&#123;</span><br><span class="line">        cur = Math.max(cur,timestamp);</span><br><span class="line">        <span class="keyword">if</span>(map.containsKey(timestamp))&#123;</span><br><span class="line">            <span class="keyword">int</span> old = map.get(timestamp);</span><br><span class="line">            <span class="keyword">int</span> cnt = tm.get(old);</span><br><span class="line">            <span class="keyword">if</span>(cnt == <span class="number">1</span>) tm.remove(old);</span><br><span class="line">            <span class="keyword">else</span> tm.put(old,cnt-<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        map.put(timestamp,price);</span><br><span class="line">        tm.put(price, tm.getOrDefault(price, <span class="number">0</span>) + <span class="number">1</span>);<span class="comment">//getOrDefault(key,iNum) 方法获取指定 key 对应的 value，如果找不到 key ，则返回设置的默认值iNum。</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">current</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> map.get(cur);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maximum</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> tm.lastKey();</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">minimum</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> tm.firstKey();</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your StockPrice object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * StockPrice obj = new StockPrice();</span></span><br><span class="line"><span class="comment"> * obj.update(timestamp,price);</span></span><br><span class="line"><span class="comment"> * int param_2 = obj.current();</span></span><br><span class="line"><span class="comment"> * int param_3 = obj.maximum();</span></span><br><span class="line"><span class="comment"> * int param_4 = obj.minimum();</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sixwudou.github.io/2022/01/23/MyBatis/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.gif">
-      <meta itemprop="name" content="毋  豆">
-      <meta itemprop="description" content="选择有时候比努力更重要">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="毋  豆 Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/01/23/MyBatis/" class="post-title-link" itemprop="url">MyBatis</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-01-23 14:35:38" itemprop="dateCreated datePublished" datetime="2022-01-23T14:35:38+08:00">2022-01-23</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-01-26 11:20:00" itemprop="dateModified" datetime="2022-01-26T11:20:00+08:00">2022-01-26</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="什么是-MyBatis？"><a href="#什么是-MyBatis？" class="headerlink" title="什么是 MyBatis？"></a>什么是 MyBatis？</h2><p><a target="_blank" rel="noopener" href="https://mybatis.org/mybatis-3/zh/getting-started.html">mybatis – MyBatis 3 | 入门</a></p>
-<p>​        MyBatis 是一款优秀的<strong>持久层框架</strong>，它支持自定义 SQL、存储过程以及高级映射。MyBatis 免除了几乎所有的 JDBC 代码以及设置参数和获取结果集的工作。MyBatis 可以通过简单的 XML 或注解来配置和映射原始类型、接口和 Java POJO（Plain Old Java Objects，普通老式 Java 对象）为数据库中的记录</p>
-<p>Maven:<a target="_blank" rel="noopener" href="https://mvnrepository.com/">Maven Repository: Search/Browse/Explore (mvnrepository.com)</a></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- https://mvnrepository.com/artifact/org.mybatis/mybatis --&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.mybatis&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mybatis&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;3.5.6&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="MyBatis的功能架构："><a href="#MyBatis的功能架构：" class="headerlink" title="MyBatis的功能架构："></a>MyBatis的功能架构：</h2><hr>
-<p>我们把Mybatis的功能架构分为三层：</p>
-<ol>
-<li>API接口层：提供给外部使用的接口API，开发人员通过这些本地API来操纵数据库。接口层一接收到调用请求就会调用数据处理层来完成具体的数据处理。</li>
-<li>数据处理层：负责具体的SQL查找、SQL解析、SQL执行和执行结果映射处理等。它主要的目的是根据调用的请求完成一次数据库操作。</li>
-<li>基础支撑层：负责最基础的功能支撑，包括连接管理、事务管理、配置加载和缓存处理，这些都是共用的东西，将他们抽取出来作为最基础的组件。为上层的数据处理层提供最基础的支撑。</li>
-</ol>
-<h2 id="MyBatis的优缺点"><a href="#MyBatis的优缺点" class="headerlink" title="MyBatis的优缺点"></a>MyBatis的优缺点</h2><hr>
-<p><strong>优点：</strong></p>
-<ul>
-<li>简单易学：本身就很小且简单。没有任何第三方依赖，最简单安装只要两个jar文件+配置几个sql映射文件易于学习，易于使用，通过文档和源代码，可以比较完全的掌握它的设计思路和实现。</li>
-<li>灵活：mybatis不会对应用程序或者数据库的现有设计强加任何影响。 sql写在xml里，便于统一管理和优化。通过sql基本上可以实现我们不使用数据访问框架可以实现的所有功能，或许更多。</li>
-<li>解除sql与程序代码的耦合：通过提供DAL层，将业务逻辑和数据访问逻辑分离，使系统的设计更清晰，更易维护，更易单元测试。sql和代码的分离，提高了可维护性。</li>
-<li>提供映射标签，支持对象与数据库的orm字段关系映射</li>
-<li>提供对象关系映射标签，支持对象关系组建维护</li>
-<li>提供xml标签，支持编写动态sql。</li>
-</ul>
-<p><strong>缺点：</strong></p>
-<ul>
-<li>编写SQL语句时工作量很大，尤其是字段多、关联表多时，更是如此。</li>
-<li>SQL语句依赖于数据库，导致数据库移植性差，不能更换数据库。</li>
-<li>框架还是比较简陋，功能尚有缺失，虽然简化了数据绑定代码，但是整个底层数据库查询实际还是要自己写的，工作量也比较大，而且不太容易适应快速数据库修改。</li>
-<li>二级缓存机制不佳</li>
-</ul>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">添加依赖</span><br><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-java<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.1.47<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.mybatis<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.5.6<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.12<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="实现查询"><a href="#实现查询" class="headerlink" title="实现查询"></a>实现查询</h2><h3 id="mybatis-config-xml"><a href="#mybatis-config-xml" class="headerlink" title="mybatis-config.xml"></a>mybatis-config.xml</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">configuration</span></span></span><br><span class="line"><span class="meta">        <span class="meta-keyword">PUBLIC</span> <span class="meta-string">&quot;-//mybatis.org//DTD Config 3.0//EN&quot;</span></span></span><br><span class="line"><span class="meta">        <span class="meta-string">&quot;http://mybatis.org/dtd/mybatis-3-config.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">environments</span> <span class="attr">default</span>=<span class="string">&quot;development&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">environment</span> <span class="attr">id</span>=<span class="string">&quot;development&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">transactionManager</span> <span class="attr">type</span>=<span class="string">&quot;JDBC&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">dataSource</span> <span class="attr">type</span>=<span class="string">&quot;POOLED&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;driver&quot;</span> <span class="attr">value</span>=<span class="string">&quot;com.mysql.jdbc.Driver&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;url&quot;</span> <span class="attr">value</span>=<span class="string">&quot;jdbc:mysql://localhost:3306/mybatis?useSSL=true<span class="symbol">&amp;amp;</span>characterEncoding=UTF-8<span class="symbol">&amp;amp;</span>useUnicode=true<span class="symbol">&amp;amp;</span>serverTimezone=GMT&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;username&quot;</span> <span class="attr">value</span>=<span class="string">&quot;root&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;password&quot;</span> <span class="attr">value</span>=<span class="string">&quot;123456&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">dataSource</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">environments</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mapper</span> <span class="attr">resource</span>=<span class="string">&quot;com/wudou/dao/userMapper.xml&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="userMapper-xml"><a href="#userMapper-xml" class="headerlink" title="userMapper.xml"></a>userMapper.xml</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">mapper</span></span></span><br><span class="line"><span class="meta">        <span class="meta-keyword">PUBLIC</span> <span class="meta-string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span></span></span><br><span class="line"><span class="meta">        <span class="meta-string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.wudou.dao.UserDao&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;getuserList&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.wudou.pojo.user&quot;</span>&gt;</span></span><br><span class="line">        select * from user</span><br><span class="line">    <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="MybatisUtils"><a href="#MybatisUtils" class="headerlink" title="MybatisUtils"></a>MybatisUtils</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.wudou.utils;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.apache.ibatis.io.Resources;</span><br><span class="line"><span class="keyword">import</span> org.apache.ibatis.jdbc.SQL;</span><br><span class="line"><span class="keyword">import</span> org.apache.ibatis.session.SqlSession;</span><br><span class="line"><span class="keyword">import</span> org.apache.ibatis.session.SqlSessionFactory;</span><br><span class="line"><span class="keyword">import</span> org.apache.ibatis.session.SqlSessionFactoryBuilder;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> javax.annotation.Resource;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">import</span> java.io.InputStream;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> wudou</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span>: 2022/1/23 17:46</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="comment">//SqlSessionFactory --&gt; SqlSession</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MybatisUtils</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> SqlSessionFactory sqlSessionFactory;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">static</span> &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">//1.获取SQLSessionFactory对象</span></span><br><span class="line">            String resource =<span class="string">&quot;mybatis-config.xml&quot;</span>;</span><br><span class="line">            InputStream inputStream = Resources.getResourceAsStream(resource);</span><br><span class="line">            sqlSessionFactory= <span class="keyword">new</span> SqlSessionFactoryBuilder().build(inputStream);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//既然有了 SqlSessionFactory，顾名思义，我们可以从中获得 SqlSession 的实例。</span></span><br><span class="line">    <span class="comment">//SqlSession 提供了在数据库执行 SQL 命令所需的所有方法。你可以通过 SqlSession 实例来直接执行已映射的 SQL 语句。</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> SqlSession <span class="title">getSqlsession</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> sqlSessionFactory.openSession();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="配置解析"><a href="#配置解析" class="headerlink" title="配置解析"></a>配置解析</h2><h3 id="核心配置文件"><a href="#核心配置文件" class="headerlink" title="核心配置文件"></a>核心配置文件</h3><h3 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h3><p>Mybatis可以配置成适应多种环境。<strong>但是每个sqlSessionFactory实例只能选择一种环境</strong></p>
-<p>Mybatis默认事务管理器是JDBC ,连接池：POOLED</p>
-<h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><h4 id="使用外部java属性文件配置"><a href="#使用外部java属性文件配置" class="headerlink" title="使用外部java属性文件配置"></a>使用外部java属性文件配置</h4><h5 id="创建java属性文件——db-properties。"><a href="#创建java属性文件——db-properties。" class="headerlink" title="创建java属性文件——db.properties。"></a>创建java属性文件——db.properties。</h5><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">driver</span> = <span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line"><span class="attr">url</span> = <span class="string">jdbc:mysql://localhost:3306/mybatis?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=true&amp;serverTimezone=UTC</span></span><br><span class="line"><span class="attr">username</span> = <span class="string">root</span></span><br><span class="line"><span class="attr">password</span> = <span class="string">123456</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="在mybatis-config-xml中引入这个属性文件。"><a href="#在mybatis-config-xml中引入这个属性文件。" class="headerlink" title="在mybatis-config.xml中引入这个属性文件。"></a>在mybatis-config.xml中引入这个属性文件。</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">configuration</span></span></span><br><span class="line"><span class="meta">        <span class="meta-keyword">PUBLIC</span> <span class="meta-string">&quot;-//mybatis.org//DTD Config 3.0//EN&quot;</span></span></span><br><span class="line"><span class="meta">        <span class="meta-string">&quot;http://mybatis.org/dtd/mybatis-3-config.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--引入外部配置文件        --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">properties</span> <span class="attr">resource</span>=<span class="string">&quot;db.properties&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">environments</span> <span class="attr">default</span>=<span class="string">&quot;development&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">environment</span> <span class="attr">id</span>=<span class="string">&quot;development&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">transactionManager</span> <span class="attr">type</span>=<span class="string">&quot;JDBC&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">dataSource</span> <span class="attr">type</span>=<span class="string">&quot;POOLED&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;driver&quot;</span> <span class="attr">value</span>=<span class="string">&quot;$&#123;driver&#125;&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;url&quot;</span> <span class="attr">value</span>=<span class="string">&quot;$&#123;url&#125;&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;username&quot;</span> <span class="attr">value</span>=<span class="string">&quot;$&#123;username&#125;&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;password&quot;</span> <span class="attr">value</span>=<span class="string">&quot;$&#123;password&#125;&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">dataSource</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">environments</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- 注册UserMapper.xml  --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mapper</span> <span class="attr">resource</span>=<span class="string">&quot;cn/gbl/dao/UserMapper.xml&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="在properties的子元素property-中配置"><a href="#在properties的子元素property-中配置" class="headerlink" title="在properties的子元素property 中配置"></a>在<strong>properties</strong>的子元素<strong>property</strong> 中配置</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">configuration</span></span></span><br><span class="line"><span class="meta">        <span class="meta-keyword">PUBLIC</span> <span class="meta-string">&quot;-//mybatis.org//DTD Config 3.0//EN&quot;</span></span></span><br><span class="line"><span class="meta">        <span class="meta-string">&quot;http://mybatis.org/dtd/mybatis-3-config.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- 在properties的子元素property中配置--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;driver&quot;</span> <span class="attr">value</span>=<span class="string">&quot;com.mysql.cj.jdbc.Driver&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;url&quot;</span> <span class="attr">value</span>=<span class="string">&quot;jdbc:mysql://localhost:3306/mybatis?useUnicode=true<span class="symbol">&amp;amp;</span>characterEncoding=utf-8<span class="symbol">&amp;amp;</span>useSSL=true<span class="symbol">&amp;amp;</span>serverTimezone=UTC&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;username&quot;</span> <span class="attr">value</span>=<span class="string">&quot;root&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;password&quot;</span> <span class="attr">value</span>=<span class="string">&quot;1234&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">environments</span> <span class="attr">default</span>=<span class="string">&quot;development&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">environment</span> <span class="attr">id</span>=<span class="string">&quot;development&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">transactionManager</span> <span class="attr">type</span>=<span class="string">&quot;JDBC&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">dataSource</span> <span class="attr">type</span>=<span class="string">&quot;POOLED&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;driver&quot;</span> <span class="attr">value</span>=<span class="string">&quot;$&#123;driver&#125;&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;url&quot;</span> <span class="attr">value</span>=<span class="string">&quot;$&#123;url&#125;&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;username&quot;</span> <span class="attr">value</span>=<span class="string">&quot;$&#123;username&#125;&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;password&quot;</span> <span class="attr">value</span>=<span class="string">&quot;$&#123;password&#125;&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">dataSource</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">environments</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- 注册UserMapper.xml  --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mapper</span> <span class="attr">resource</span>=<span class="string">&quot;cn/gbl/dao/UserMapper.xml&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="也可以在-SqlSessionFactoryBuilder-build-方法中传入属性值（了解即可）"><a href="#也可以在-SqlSessionFactoryBuilder-build-方法中传入属性值（了解即可）" class="headerlink" title="也可以在 SqlSessionFactoryBuilder.build() 方法中传入属性值（了解即可）"></a>也可以在 SqlSessionFactoryBuilder.build() 方法中传入属性值（了解即可）</h5><p><strong>注意：</strong> 这三种方式如果同时存在，会有一定的优先级问题</p>
-<ul>
-<li>首先，读取在 properties 元素体中指定的属性；</li>
-<li>其次，读取在 外部的java属性文件，且会覆盖已经指定了的重复属性；</li>
-<li>最后，读取作为方法参数传递的属性，且会覆盖已经从 properties 元素体和 java外部属性文件加载了的重复属性。</li>
-</ul>
-<h3 id="类型别名"><a href="#类型别名" class="headerlink" title="类型别名"></a>类型别名</h3><p>类型别名可为 Java 类型设置一个缩写名字。 它仅用于 XML 配置，意在降低冗余的全限定类名书写。例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;typeAliases&gt;</span><br><span class="line">  &lt;typeAlias alias=&quot;Author&quot; type=&quot;domain.blog.Author&quot;/&gt;</span><br><span class="line">  &lt;typeAlias alias=&quot;Blog&quot; type=&quot;domain.blog.Blog&quot;/&gt;</span><br><span class="line">  &lt;typeAlias alias=&quot;Comment&quot; type=&quot;domain.blog.Comment&quot;/&gt;</span><br><span class="line">  &lt;typeAlias alias=&quot;Post&quot; type=&quot;domain.blog.Post&quot;/&gt;</span><br><span class="line">  &lt;typeAlias alias=&quot;Section&quot; type=&quot;domain.blog.Section&quot;/&gt;</span><br><span class="line">  &lt;typeAlias alias=&quot;Tag&quot; type=&quot;domain.blog.Tag&quot;/&gt;</span><br><span class="line">&lt;/typeAliases&gt;</span><br></pre></td></tr></table></figure>
-
-<p>当这样配置时，<code>Blog</code> 可以用在任何使用 <code>domain.blog.Blog</code> 的地方。</p>
-<p>也可以指定一个包名，MyBatis 会在包名下面搜索需要的 Java Bean，比如：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;typeAliases&gt;</span><br><span class="line">  &lt;package name=&quot;domain.blog&quot;/&gt;</span><br><span class="line">&lt;/typeAliases&gt;</span><br></pre></td></tr></table></figure>
-
-<p>每一个在包 <code>domain.blog</code> 中的 Java Bean，在没有注解的情况下，会使用 Bean 的首字母小写的非限定类名来作为它的别名。 比如 <code>domain.blog.Author</code> 的别名为 <code>author</code>；若有注解，则别名为其注解值。见下面的例子：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@Alias(&quot;author&quot;)</span><br><span class="line">public class Author &#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Settings"><a href="#Settings" class="headerlink" title="Settings"></a>Settings</h3><p>官网中给出了很多设置，这里只介绍个别。</p>
-<table>
-<thead>
-<tr>
-<th>设置名</th>
-<th>描述</th>
-<th>有效值</th>
-<th>默认值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>logImpl</td>
-<td>指定 MyBatis 所用日志的具体实现，未指定时将自动查找。</td>
-<td>SLF4J | LOG4J | LOG4J2 | JDK_LOGGING | COMMONS_LOGGING | STDOUT_LOGGING | NO_LOGGING （这些都是日志的具体实现）</td>
-<td>未设置</td>
-</tr>
-<tr>
-<td>cacheEnabled</td>
-<td>全局性地开启或关闭所有映射器配置文件中已配置的任何缓存。</td>
-<td>true | false</td>
-<td>true</td>
-</tr>
-<tr>
-<td>lazyLoadingEnabled</td>
-<td>延迟加载的全局开关。当开启时，所有关联对象都会延迟加载。 特定关联关系中可通过设置 <code>fetchType</code> 属性来覆盖该项的开关状态。</td>
-<td>true | false</td>
-<td>false</td>
-</tr>
-</tbody></table>
-<h3 id="生命周期和作用域"><a href="#生命周期和作用域" class="headerlink" title="生命周期和作用域"></a>生命周期和作用域</h3><p>开始-&gt;SQLSessionFactoryBuild（配置文件启动）-&gt;SqlSessionFactor-&gt;SqlSession-&gt;Sqlmapper-&gt;结束</p>
-<h4 id="SQLSessionFactoryBuild"><a href="#SQLSessionFactoryBuild" class="headerlink" title="SQLSessionFactoryBuild"></a>SQLSessionFactoryBuild</h4><ul>
-<li>一旦创建就不需要它</li>
-<li>局部变量</li>
-</ul>
-<h4 id="SQLSessionFactory"><a href="#SQLSessionFactory" class="headerlink" title="SQLSessionFactory"></a>SQLSessionFactory</h4><ul>
-<li>相当于数据库连接池</li>
-<li>一旦被创建就应该在应用运行期间一直存在，没有任何理由丢弃它或重新创建另一个实例</li>
-</ul>
-<h4 id="SQLSession"><a href="#SQLSession" class="headerlink" title="SQLSession"></a>SQLSession</h4><ul>
-<li>连接到连接池得请求</li>
-<li>用完之后需要赶紧关闭</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sixwudou.github.io/2022/01/22/JVM-%E7%8B%82%E7%A5%9E/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.gif">
-      <meta itemprop="name" content="毋  豆">
-      <meta itemprop="description" content="选择有时候比努力更重要">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="毋  豆 Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/01/22/JVM-%E7%8B%82%E7%A5%9E/" class="post-title-link" itemprop="url">JVM-狂神</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-01-22 10:17:56" itemprop="dateCreated datePublished" datetime="2022-01-22T10:17:56+08:00">2022-01-22</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-01-24 15:25:30" itemprop="dateModified" datetime="2022-01-24T15:25:30+08:00">2022-01-24</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="类加载器"><a href="#类加载器" class="headerlink" title="类加载器"></a>类加载器</h2><ul>
-<li>应用类加载器(app)</li>
-<li>扩展类加载器(ext)</li>
-<li>根加载器()</li>
-</ul>
-<h2 id="双亲委派机制"><a href="#双亲委派机制" class="headerlink" title="双亲委派机制"></a>双亲委派机制</h2>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/01/22/JVM-%E7%8B%82%E7%A5%9E/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sixwudou.github.io/2022/01/22/SpringMVC-%E7%8B%82%E7%A5%9E/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.gif">
-      <meta itemprop="name" content="毋  豆">
-      <meta itemprop="description" content="选择有时候比努力更重要">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="毋  豆 Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/01/22/SpringMVC-%E7%8B%82%E7%A5%9E/" class="post-title-link" itemprop="url">SpringMVC(狂神)</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-01-22 09:59:20 / 修改时间：13:11:53" itemprop="dateCreated datePublished" datetime="2022-01-22T09:59:20+08:00">2022-01-22</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <span id="more"></span>
-
-<h3 id="mvc"><a href="#mvc" class="headerlink" title="mvc"></a>mvc</h3><ul>
-<li>模型(dao,service)</li>
-<li>视图(jsp)</li>
-<li>控制器(Servlet)</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sixwudou.github.io/2022/01/20/Java%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.gif">
-      <meta itemprop="name" content="毋  豆">
-      <meta itemprop="description" content="选择有时候比努力更重要">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="毋  豆 Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/01/20/Java%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">Java基础笔记</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-01-20 13:41:56" itemprop="dateCreated datePublished" datetime="2022-01-20T13:41:56+08:00">2022-01-20</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-01-22 13:14:05" itemprop="dateModified" datetime="2022-01-22T13:14:05+08:00">2022-01-22</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>尚硅谷Java基础笔记</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/01/20/Java%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/01/23/2034/" rel="prev" title="2034">
+      <i class="fa fa-chevron-left"></i> 2034
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sixwudou.github.io/2022/01/20/jvm(1)/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.gif">
-      <meta itemprop="name" content="毋  豆">
-      <meta itemprop="description" content="选择有时候比努力更重要">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="毋  豆 Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/01/20/jvm(1)/" class="post-title-link" itemprop="url">JVM(1)</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-01-20 00:03:58" itemprop="dateCreated datePublished" datetime="2022-01-20T00:03:58+08:00">2022-01-20</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-01-22 13:11:36" itemprop="dateModified" datetime="2022-01-22T13:11:36+08:00">2022-01-22</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>尚硅谷JVM笔记</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/01/20/jvm(1)/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sixwudou.github.io/2022/01/19/JUC(1)/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.gif">
-      <meta itemprop="name" content="毋  豆">
-      <meta itemprop="description" content="选择有时候比努力更重要">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="毋  豆 Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/01/19/JUC(1)/" class="post-title-link" itemprop="url">JUC并发编程（1）</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-01-19 23:10:33" itemprop="dateCreated datePublished" datetime="2022-01-19T23:10:33+08:00">2022-01-19</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-01-22 13:07:38" itemprop="dateModified" datetime="2022-01-22T13:07:38+08:00">2022-01-22</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>尚硅谷JUC笔记</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/01/19/JUC(1)/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -1333,6 +753,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8D%E8%BD%BD%E5%92%8C%E9%87%8D%E5%86%99%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%88%E4%BA%86%E8%A7%A3%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">重载和重写的区别（了解）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#String%E5%92%8CStringBuffer-StringBuilder-%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9FString-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%8D%E5%8F%AF%E5%8F%98%E7%9A%84%EF%BC%9F%EF%BC%88%E5%BF%85%E4%BC%9A%EF%BC%89"><span class="nav-number">2.</span> <span class="nav-text">String和StringBuffer,StringBuilder 的区别是什么？String 为什么是不可变的？（必会）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E5%8A%A8%E8%A3%85%E7%AE%B1%E4%B8%8E%E6%8B%86%E7%AE%B1-%E4%BA%86%E8%A7%A3"><span class="nav-number">3.</span> <span class="nav-text">自动装箱与拆箱*****(了解)*</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8E-equals-%E5%BF%85%E4%BC%9A"><span class="nav-number">4.</span> <span class="nav-text">&#x3D;&#x3D; 与 equals(必会)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E4%BA%8Efinal%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%BB%E7%BB%93-%E5%BF%85%E4%BC%9A"><span class="nav-number">5.</span> <span class="nav-text">关于final关键字的一些总结(必会)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-%E4%B8%AD%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86-%E4%BA%86%E8%A7%A3"><span class="nav-number">6.</span> <span class="nav-text">Java 中的异常处理(了解)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#error-%E5%92%8C-exception-%E7%9A%84%E5%8C%BA%E5%88%AB-%E4%BA%86%E8%A7%A3"><span class="nav-number">7.</span> <span class="nav-text">error 和 exception 的区别?(了解)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%E5%92%8C%E6%8A%BD%E8%B1%A1%E7%B1%BB%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88-%E5%BF%85%E4%BC%9A"><span class="nav-number">8.</span> <span class="nav-text">接口和抽象类的区别是什么(必会)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%EF%BC%9F%E6%9C%89%E5%87%A0%E7%A7%8D%EF%BC%9F-%E5%BF%85%E4%BC%9A"><span class="nav-number">9.</span> <span class="nav-text">什么是单例模式？有几种？(必会)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%89%8B%E5%86%99%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%EF%BC%9F-%E5%BF%85%E4%BC%9A"><span class="nav-number">10.</span> <span class="nav-text">手写冒泡排序？(必会)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BIO%E3%80%81NIO%E3%80%81AIO-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F-%E4%BA%86%E8%A7%A3"><span class="nav-number">11.</span> <span class="nav-text">BIO、NIO、AIO 有什么区别？(了解)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F-%E4%BA%86%E8%A7%A3"><span class="nav-number">12.</span> <span class="nav-text">常见的数据结构有哪些？(了解)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java%E9%9B%86%E5%90%88%E4%BD%93%E7%B3%BB%E6%9C%89%E4%BB%80%E4%B9%88-%E5%BF%85%E4%BC%9A"><span class="nav-number">13.</span> <span class="nav-text">Java集合体系有什么?(必会)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#List-%E7%9A%84%E4%B8%89%E4%B8%AA%E5%AD%90%E7%B1%BB%E7%9A%84%E7%89%B9%E7%82%B9-%E5%BF%85%E4%BC%9A"><span class="nav-number">14.</span> <span class="nav-text">List 的三个子类的特点(必会)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#List-%E5%92%8C-Map%E3%80%81Set-%E7%9A%84%E5%8C%BA%E5%88%AB-%E5%BF%85%E4%BC%9A"><span class="nav-number">15.</span> <span class="nav-text">List 和 Map、Set 的区别(必会)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-16-HashMap%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86-%E5%BF%85%E4%BC%9A"><span class="nav-number">16.</span> <span class="nav-text">1.16 HashMap底层实现原理(必会)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-17%E8%B0%88%E4%B8%80%E4%B8%8B-hashMap-%E4%B8%AD%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E9%9C%80%E8%A6%81%E8%BF%9B%E8%A1%8C%E6%89%A9%E5%AE%B9%EF%BC%8C%E6%89%A9%E5%AE%B9-resize-%E5%8F%88%E6%98%AF%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9A%84%EF%BC%9F-%E9%AB%98%E8%96%AA%E5%B8%B8%E9%97%AE"><span class="nav-number">17.</span> <span class="nav-text">1.17谈一下 hashMap 中什么时候需要进行扩容，扩容 resize()又是如何实现的？(高薪常问)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ConcurrentHashMap%E7%89%B9%E7%82%B9-%E9%AB%98%E8%96%AA%E5%B8%B8%E9%97%AE"><span class="nav-number">18.</span> <span class="nav-text">ConcurrentHashMap特点(高薪常问)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HashTable-%E4%BA%86%E8%A7%A3"><span class="nav-number">19.</span> <span class="nav-text">HashTable(了解)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HashMap-%E5%92%8C-HashTable-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB-%E5%BF%85%E4%BC%9A"><span class="nav-number">20.</span> <span class="nav-text">HashMap 和 HashTable 有什么区别?(必会)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HashMap%EF%BC%8CHashTable%EF%BC%8CConcurrentHashMap%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%8C%E5%8F%8A%E6%80%A7%E8%83%BD%E5%AF%B9%E6%AF%94-%E5%BF%85%E4%BC%9A"><span class="nav-number">21.</span> <span class="nav-text">HashMap，HashTable，ConcurrentHashMap之间的区别，及性能对比(必会)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E7%BA%BF%E7%A8%8B-%E7%BA%BF%E7%A8%8B%E5%92%8C%E8%BF%9B%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB-%E5%BF%85%E4%BC%9A"><span class="nav-number">22.</span> <span class="nav-text">什么是线程?线程和进程的区别?(必会)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E7%BA%BF%E7%A8%8B%E6%9C%89%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F-%E5%BF%85%E4%BC%9A"><span class="nav-number">23.</span> <span class="nav-text">创建线程有几种方式(必会)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95%E6%9C%89%E4%BB%80%E4%B9%88-%E5%BF%85%E4%BC%9A"><span class="nav-number">24.</span> <span class="nav-text">线程的基本方法有什么?(必会)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8-java-%E4%B8%AD-wait-%E5%92%8C-sleep-%E6%96%B9%E6%B3%95%E7%9A%84%E4%B8%8D%E5%90%8C%EF%BC%9F-%E5%BF%85%E4%BC%9A"><span class="nav-number">25.</span> <span class="nav-text">在 java 中 wait 和 sleep 方法的不同？(必会)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E5%8E%9F%E7%90%86-%E9%AB%98%E8%96%AA%E5%B8%B8%E9%97%AE"><span class="nav-number">26.</span> <span class="nav-text">线程池原理(高薪常问)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E6%89%A7%E8%A1%8C%E7%9A%84%E9%A1%BA%E5%BA%8F-%E9%AB%98%E8%96%AA%E5%B8%B8%E9%97%AE"><span class="nav-number">27.</span> <span class="nav-text">线程执行的顺序(高薪常问)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%A0%B8%E5%BF%83%E5%8F%82%E6%95%B0%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F-%E9%AB%98%E8%96%AA%E5%B8%B8%E9%97%AE"><span class="nav-number">28.</span> <span class="nav-text">线程池的核心参数有哪些？(高薪常问)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%BB%E9%94%81%E4%BA%A7%E7%94%9F%E7%9A%84%E6%9D%A1%E4%BB%B6%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%EF%BC%9F-%E9%AB%98%E8%96%AA%E5%B8%B8%E9%97%AE"><span class="nav-number">29.</span> <span class="nav-text">死锁产生的条件以及如何避免？(高薪常问)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JVM%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9FJVM%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84-%E9%AB%98%E8%96%AA%E5%B8%B8%E9%97%AE"><span class="nav-number">30.</span> <span class="nav-text">JVM是什么？JVM的基本结构 (高薪常问)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JVM%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%84-%E9%AB%98%E8%96%AA%E5%B8%B8%E9%97%AE"><span class="nav-number">31.</span> <span class="nav-text">JVM内存结构(高薪常问)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB%E7%9A%84%E5%8A%A0%E8%BD%BD%EF%BC%8C%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A8%E7%9A%84%E7%A7%8D%E7%B1%BB-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6-%E9%AB%98%E8%96%AA%E5%B8%B8%E9%97%AE"><span class="nav-number">32.</span> <span class="nav-text">类的加载，类加载器的种类,类加载机制(高薪常问)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFGC-%E9%AB%98%E8%96%AA%E5%B8%B8%E9%97%AE"><span class="nav-number">33.</span> <span class="nav-text">什么是GC(高薪常问)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JVM%E8%B0%83%E4%BC%98%E7%9A%84%E5%B7%A5%E5%85%B7%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F-%E9%AB%98%E8%96%AA%E5%B8%B8%E9%97%AE"><span class="nav-number">34.</span> <span class="nav-text">JVM调优的工具有哪些？(高薪常问)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E7%9A%84-JVM-%E8%B0%83%E4%BC%98%E7%9A%84%E5%8F%82%E6%95%B0%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F-%E9%AB%98%E8%96%AA%E5%B8%B8%E9%97%AE"><span class="nav-number">35.</span> <span class="nav-text">常用的 JVM 调优的参数都有哪些？(高薪常问)</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
