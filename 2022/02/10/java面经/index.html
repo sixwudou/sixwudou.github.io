@@ -53,7 +53,7 @@
 <meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88EB.tmp.jpg">
 <meta property="og:image" content="file:///C:/Users/76023/AppData/Local/Temp/ksohtml/wps88EC.tmp.jpg">
 <meta property="article:published_time" content="2022-02-10T06:26:32.000Z">
-<meta property="article:modified_time" content="2022-02-10T06:36:30.159Z">
+<meta property="article:modified_time" content="2022-02-12T08:55:27.546Z">
 <meta property="article:author" content="毋  豆">
 <meta property="article:tag" content="面试">
 <meta name="twitter:card" content="summary">
@@ -210,10 +210,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-02-10 14:26:32 / 修改时间：14:36:30" itemprop="dateCreated datePublished" datetime="2022-02-10T14:26:32+08:00">2022-02-10</time>
+              <time title="创建时间：2022-02-10 14:26:32" itemprop="dateCreated datePublished" datetime="2022-02-10T14:26:32+08:00">2022-02-10</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-02-12 16:55:27" itemprop="dateModified" datetime="2022-02-12T16:55:27+08:00">2022-02-12</time>
+              </span>
 
           
 
@@ -232,26 +238,13 @@
 <p>简单的来说：String 类中使用 final 关键字字符数组保存字符串， private final char value[] ，所以 String对象是不可变的。而StringBuilder 与 StringBuffer 都继承自 AbstractStringBuilder 类，在AbstractStringBuilder中也是使用字符数组保存字符串 char[]value 但是没有用 final 关键字修饰，所以这两种对象都是可变的。 </p>
 <p>StringBuilder 与 StringBuffer 的构造方法都是调用父类构造方法也就是 AbstractStringBuilder 实现的，大家可以自行查阅源码。 </p>
 <p>AbstractStringBuilder.java</p>
-<p>abstract class AbstractStringBuilder implements Appendable, CharSequence { </p>
-<p>char[] value; </p>
-<p>int count; </p>
-<p>AbstractStringBuilder() { </p>
-<p>}</p>
-<p>AbstractStringBuilder(int capacity) { </p>
-<p>value = new char[capacity]; </p>
-<p>}</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">AbstractStringBuilder</span> <span class="keyword">implements</span> <span class="title">Appendable</span>, <span class="title">CharSequence</span> </span>&#123; </span><br><span class="line"></span><br><span class="line"><span class="keyword">char</span>[] value; </span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> count; </span><br><span class="line"></span><br><span class="line">AbstractStringBuilder() &#123; </span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">AbstractStringBuilder(<span class="keyword">int</span> capacity) &#123; </span><br><span class="line"></span><br><span class="line">value = <span class="keyword">new</span> <span class="keyword">char</span>[capacity]; </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p><strong>线程安全性</strong> </p>
 <p>String 中的对象是不可变的，也就可以理解为常量，线程安全。AbstractStringBuilder 是 StringBuilder 与 StringBuffer 的公共父类，定义了一些字符串的基本操作，如 expandCapacity.append.insert.indexOf 等公共 方法。StringBuffer 对方法加了同步锁或者对调用的方法加了同步锁，所以是线程安全的。StringBuilder 并没有对方法进行加同步锁，所以是非线程安全的。 </p>
 <p><strong>性能</strong> </p>
-<p>abstract class AbstractStringBuilder implements Appendable, CharSequence { </p>
-<p>char[] value; </p>
-<p>int count; </p>
-<p>AbstractStringBuilder() { </p>
-<p>}</p>
-<p>AbstractStringBuilder(int capacity) { </p>
-<p>value = new char[capacity]; </p>
-<p>}</p>
-<p>}</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">AbstractStringBuilder</span> <span class="keyword">implements</span> <span class="title">Appendable</span>, <span class="title">CharSequence</span> </span>&#123; </span><br><span class="line"></span><br><span class="line"><span class="keyword">char</span>[] value; </span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> count; </span><br><span class="line"></span><br><span class="line">AbstractStringBuilder() &#123; </span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">AbstractStringBuilder(<span class="keyword">int</span> capacity) &#123; </span><br><span class="line"></span><br><span class="line">value = <span class="keyword">new</span> <span class="keyword">char</span>[capacity]; </span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>每次对 String 类型进行改变的时候，都会生成一个新的 String 对象，然后将指针指向新的 String 对象。 </p>
 <p>StringBuffer 每次都会对 StringBuffer 对象本身进行操作，而不是生成新的对象并改变对象引用。相同情况下使用StirngBuilder 相比使用 StringBuffer 仅能获得 10%~15% 左右的性能提升，但却要冒多线程不安全的风险。 </p>
 <p><em><strong>*对于三者使用的总结：*</strong></em> </p>
@@ -264,22 +257,8 @@
 <p><strong>equals()</strong> : 它的作用也是判断两个对象是否相等。但它一般有两种使用情况,如下： </p>
 <p>****情况1****：类没有覆盖 equals() 方法。则通过 equals() 比较该类的两个对象时，等价于通过“==”比较这两个对象。 </p>
 <p>****情况2****：类覆盖了 equals() 方法。一般，我们都覆盖 equals() 方法来两个对象的内容相等；若它们的内容相等，则返回 true (即，认为这两个对象相等)。 </p>
-<p>public class test1 { </p>
-<p>public static void main(String[] args) { </p>
-<p>String a = new String(“ab”); // a 为一个引用 </p>
-<p>String b = new String(“ab”); // b为另一个引用,对象的内容一样 </p>
-<p>String aa = “ab”; // 放在常量池中 </p>
-<p>String bb = “ab”; // 从常量池中查找 </p>
-<p>if (aa == bb) // true </p>
-<p>System.out.println(“aa==bb”); </p>
-<p>if (a == b) // false，非同一对象 </p>
-<p>System.out.println(“a==b”); </p>
-<p>if (a.equals(b)) // true </p>
-<p>System.out.println(“aEQb”); </p>
-<p>if (42 == 42.0) // true </p>
-<p>System.out.println(“true”); </p>
-<p>} </p>
-<p>}</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">test1</span> </span>&#123; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123; </span><br><span class="line"></span><br><span class="line">String a = <span class="keyword">new</span> String(<span class="string">&quot;ab&quot;</span>); <span class="comment">// a 为一个引用 </span></span><br><span class="line"></span><br><span class="line">String b = <span class="keyword">new</span> String(<span class="string">&quot;ab&quot;</span>); <span class="comment">// b为另一个引用,对象的内容一样 </span></span><br><span class="line"></span><br><span class="line">String aa = <span class="string">&quot;ab&quot;</span>; <span class="comment">// 放在常量池中 </span></span><br><span class="line"></span><br><span class="line">String bb = <span class="string">&quot;ab&quot;</span>; <span class="comment">// 从常量池中查找 </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (aa == bb) <span class="comment">// true </span></span><br><span class="line"></span><br><span class="line">System.out.println(<span class="string">&quot;aa==bb&quot;</span>); </span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (a == b) <span class="comment">// false，非同一对象 </span></span><br><span class="line"></span><br><span class="line">System.out.println(<span class="string">&quot;a==b&quot;</span>); </span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (a.equals(b)) <span class="comment">// true </span></span><br><span class="line"></span><br><span class="line">System.out.println(<span class="string">&quot;aEQb&quot;</span>); </span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (<span class="number">42</span> == <span class="number">42.0</span>) <span class="comment">// true </span></span><br><span class="line"></span><br><span class="line">System.out.println(<span class="string">&quot;true&quot;</span>); </span><br><span class="line"></span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p><em><strong>*说明：*</strong></em> </p>
 <p>String 中的 equals 方法是被重写过的，因为 object 的 equals 方法是比较的对象的内存地址，而 String 的equals 方法比较的是对象的值。 </p>
 <p>当创建 String 类型的对象时，虚拟机会在常量池中查找有没有已经存在的值和要创建的值相同的对象，如果有就把它赋给当前引用。如果没有就在常量池中重新创建一个 String 对象。</p>
@@ -309,33 +288,10 @@
 <p><img src="file:///C:\Users\76023\AppData\Local\Temp\ksohtml\wps88B9.tmp.jpg" alt="img"> </p>
 <p>****双检锁****：线程安全，延迟初始化。</p>
 <p><img src="file:///C:\Users\76023\AppData\Local\Temp\ksohtml\wps88BA.tmp.jpg" alt="img"> </p>
-<h3 id="手写冒泡排序？-必会"><a href="#手写冒泡排序？-必会" class="headerlink" title="手写冒泡排序？(必会)"></a>手写冒泡排序？(必会)</h3><p>public class Sort {</p>
-<p>​    public static void sort() {</p>
-<p>​        Scanner input = new Scanner(System.in);</p>
-<p>​        int sort[] = new int[10];</p>
-<p>​        int temp;</p>
-<p>​        System.out.println(“请输入10个排序的数据：”);</p>
-<p>​        for (int i = 0; i &lt; sort.length; i++) {</p>
-<p>​            sort[i] = input.nextInt();</p>
-<p>​        }</p>
-<p>​        for (int i = 0; i &lt; sort.length - 1; i++) {</p>
-<p>​            for (int j = 0; j &lt; sort.length - i - 1; j++)             {</p>
-<p>​                if (sort[j] &lt; sort[j + 1]) {</p>
-<p>​                    temp = sort[j];</p>
-<p>​                    sort[j] = sort[j + 1];</p>
-<p>​                    sort[j + 1] = temp;</p>
-<p>​                }</p>
-<p>​            }</p>
-<p>​        }</p>
-<p>​        System.out.println(“排列后的顺序为：”);</p>
-<p>​        for(int i=0;i&lt;sort.length;i++){</p>
-<p>​            System.out.print(sort[i]+”======”);</p>
-<p>​        }</p>
-<p>​    }</p>
-<p>​    public static void main(String[] args) {</p>
-<p>​        sort();</p>
-<p>​    }</p>
-<p>}</p>
+<h3 id="手写冒泡排序？-必会"><a href="#手写冒泡排序？-必会" class="headerlink" title="手写冒泡排序？(必会)"></a>手写冒泡排序？(必会)</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Sort</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		Scanner input = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line"></span><br><span class="line">		<span class="keyword">int</span> sort[] = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>];</span><br><span class="line"></span><br><span class="line">		<span class="keyword">int</span> temp;</span><br><span class="line"></span><br><span class="line">		System.out.println(<span class="string">&quot;请输入10个排序的数据：&quot;</span>);</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; sort.length; i++) &#123;</span><br><span class="line"></span><br><span class="line">			sort[i] = input.nextInt();</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; sort.length - <span class="number">1</span>; i++) &#123;</span><br><span class="line"></span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; sort.length - i - <span class="number">1</span>; j++) 			&#123;</span><br><span class="line"></span><br><span class="line">				<span class="keyword">if</span> (sort[j] &lt; sort[j + <span class="number">1</span>]) &#123;</span><br><span class="line"></span><br><span class="line">					temp = sort[j];</span><br><span class="line"></span><br><span class="line">					sort[j] = sort[j + <span class="number">1</span>];</span><br><span class="line"></span><br><span class="line">					sort[j + <span class="number">1</span>] = temp;</span><br><span class="line"></span><br><span class="line">				&#125;</span><br><span class="line"></span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		System.out.println(<span class="string">&quot;排列后的顺序为：&quot;</span>);</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;sort.length;i++)&#123;</span><br><span class="line"></span><br><span class="line">			System.out.print(sort[i]+<span class="string">&quot;======&quot;</span>);</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		sort();</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
 <h3 id="BIO、NIO、AIO-有什么区别？-了解"><a href="#BIO、NIO、AIO-有什么区别？-了解" class="headerlink" title="BIO、NIO、AIO 有什么区别？(了解)"></a>BIO、NIO、AIO 有什么区别？(了解)</h3><p>BIO：Block IO 同步阻塞式 IO，就是我们平常使用的传统 IO，它的特点是模式简单使用方便，并发处理能力低。 </p>
 <p>NIO：New IO 同步非阻塞 IO，是传统 IO 的升级，客户端和服务器端通过 Channel（通道）通讯，实现了多路复用。 </p>
 <p>AIO：Asynchronous IO 是 NIO 的升级，也叫 NIO2，实现了异步非堵塞 IO ，异步 IO 的操作基于事件和回调机制。</p>
@@ -694,7 +650,10 @@
     <a href="/2022/01/23/2034/" rel="prev" title="2034">
       <i class="fa fa-chevron-left"></i> 2034
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2022/02/10/MyBatis1/" rel="next" title="">
+       <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -769,14 +728,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
